@@ -1,0 +1,152 @@
+main {
+	width: 100%;
+	background: url("../img/bg-textura.png");
+	background-repeat: repeat;
+	.acerca-de {
+		.contenedor {
+			position: relative;
+			overflow: visible;
+			.foto {
+				position: absolute;
+				top: -50px;
+				width: 80%;
+				z-index: 0;
+				box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 0.35);
+				img {
+					vertical-align: top;
+					width: 100%;
+				}
+			}
+			article {
+				position: relative;
+				background-color: #fff;
+				top: 500px;
+				float: right;
+				width: 50%;
+				padding: 40px;
+				box-shadow: 0px 0px 15px rgba($color: #000000, $alpha: 0.35);
+				z-index: 1;
+				h3 {
+					font-size: 5rem;
+					font-weight: 300;
+					margin-bottom: 40px;
+				}
+				p {
+					line-height: 2.8rem;
+					margin-bottom: 15px;
+				}
+			}
+		}
+	}
+	.menu {
+		padding-top: 600px;
+		margin-bottom: 60px;
+		.titulo {
+			font-size: 4rem;
+			font-weight: 300;
+			text-align: center;
+		}
+		.menu-contenedor {
+			border: 1px solid #000000;
+			padding: 10px;
+			background: transparent;
+			overflow: hidden;
+		}
+		.menu-contenedor2 {
+			border: 1px solid #000000;
+			padding: 10px;
+			background: transparent;
+			overflow: hidden;
+			article {
+				width: 50%;
+				padding: 20px;
+				float: left;
+				.categoria {
+					text-align: center;
+					font-size: 3rem;
+					font-weight: 600;
+					margin-bottom: 40px;
+				}
+				.plato {
+					margin-bottom: 20px;
+					padding-bottom: 20px;
+					border-bottom: 4px dotted #000000;
+					.nombre {
+						font-size: 2rem;
+						float: left;
+						margin-bottom: 15px;
+					}
+					.precio {
+						font-size: 2rem;
+						float: right;
+						margin-bottom: 15px;
+					}
+					.descripcion {
+						font-size: 1.6rem;
+						color: #676767;
+						clear: both;
+					}
+				}
+			}
+		}
+	}
+	.galeria {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(2, 1fr);
+		.foto {
+			opacity: 0.7;
+			transition: all 0.3s ease;
+
+			img {
+				width: 100%;
+				vertical-align: top;
+			}
+		}
+		.foto:hover {
+			opacity: 1;
+			transition: all 0.3s ease;
+		}
+	}
+	.ubicacion {
+		padding-top: 50px;
+		padding-bottom: 20px;
+		background-color: #fff;
+		.contenedor {
+			overflow: hidden;
+			.titulo {
+				font-size: 5rem;
+				text-align: center;
+				font-weight: 300;
+				margin-bottom: 40px;
+			}
+			.direccion {
+				width: 50%;
+				float: left;
+				text-align: start;
+				.numero {
+					margin-top: 15px;
+				}
+			}
+			.horarios {
+				width: 50%;
+				float: right;
+				text-align: right;
+				.semana,
+				.finde {
+					width: 50%;
+					float: left;
+					text-align: center;
+				}
+			}
+		}
+	}
+	.mapa {
+		width: 100%;
+		iframe {
+			width: 100%;
+			height: 600px;
+			vertical-align: top;
+		}
+	}
+}

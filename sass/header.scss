@@ -1,0 +1,44 @@
+header {
+	width: 100%;
+	background: url("../img/bg.jpg") #281a0c;
+	.contenedor {
+		position: relative;
+		height: 700px;
+		.menu-nav {
+			width: 100%;
+			text-align: right;
+			a {
+				display: inline-block;
+				text-decoration: none;
+				font-size: 2rem;
+				font-weight: 300;
+				color: #fff;
+				margin: 40px 20px;
+				position: relative;
+			}
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+		.presentacion {
+			color: #fff;
+			position: absolute;
+			top: 50%;
+			margin-top: -52px;
+			transform: translate();
+			// text-align: center;
+			.nombre {
+				font-size: 5rem;
+				font-weight: 600;
+				span {
+					font-weight: 300;
+				}
+			}
+			h3 {
+				font-weight: 300;
+				font-style: italic;
+				font-size: 2.5rem;
+			}
+		}
+	}
+}
